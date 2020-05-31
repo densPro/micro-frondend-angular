@@ -26,7 +26,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/systemjs/dist/system.min.js",
+              "node_modules/systemjs/dist/extras/amd.min.js",
+              "node_modules/systemjs/dist/extras/named-exports.min.js",
+              "node_modules/systemjs/dist/extras/named-register.min.js",
+              "node_modules/import-map-overrides/dist/import-map-overrides.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +125,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "container"
 }
