@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:single-spa:child1": "ng build child1 --prod --deploy-url http://localhost:4201/",
-    "serve:single-spa:child1": "ng s --project child1 --disable-host-check --port 4201 --deploy-url http://localhost:4201/ --live-reload false"
+    "serve:single-spa:child1": "ng s --project child1 --disable-host-check --port 4201 --deploy-url http://localhost:4201/ --live-reload false",
+    "lite-server": "lite-server -c bs-config.json"
   },
   "private": true,
   "dependencies": {
@@ -32,9 +33,9 @@
     "@angular-devkit/build-angular": "~0.901.7",
     "@angular/cli": "~9.1.7",
     "@angular/compiler-cli": "~9.1.9",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -43,6 +44,7 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+    "lite-server": "^2.5.4",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",

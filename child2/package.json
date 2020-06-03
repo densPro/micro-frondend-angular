@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:single-spa:child2": "ng build child2 --prod --deploy-url http://localhost:4202/",
-    "serve:single-spa:child2": "ng s --project child2 --disable-host-check --port 4202 --deploy-url http://localhost:4202/ --live-reload false"
+    "serve:single-spa:child2": "ng s --project child2 --disable-host-check --port 4202 --deploy-url http://localhost:4202/ --live-reload false",
+    "lite-server": "lite-server -c bs-config.json"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
+    "lite-server": "^2.5.4",
     "rxjs": "~6.5.4",
     "single-spa": "^5.5.2",
     "single-spa-angular": "^4.1.0",
